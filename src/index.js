@@ -54,8 +54,10 @@ function handleInput(e) {
       }
     })
     .catch(error => {
-      clearHTML();
-      Notify.failure('Oops, there is no country with that name');
+      if (error.message === '404') {
+        clearHTML();
+        Notify.failure('Oops, there is no country with that name');
+      }
     });
 }
 
