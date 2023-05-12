@@ -20,7 +20,6 @@ function handleInput(e) {
 
   fetchCountries(e.target.value.trim())
     .then(data => {
-      console.log(data);
       if (data.length > 10) {
         clearHTML();
 
