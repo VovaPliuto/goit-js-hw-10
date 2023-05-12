@@ -18,3 +18,36 @@ body {
   max-width: 320px;
   margin-bottom: 16px;
 }
+
+ul {
+  margin: 0;
+  padding: 0;
+  gap: 15px;
+}
+
+h2 {
+  padding: 0;
+  margin: 0;
+}
+
+.country-item {
+  font-size: 20px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.country-item + .country-item {
+  margin-top: 10px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.values {
+  font-weight: 700;
+}
